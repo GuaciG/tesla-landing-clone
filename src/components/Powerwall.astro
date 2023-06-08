@@ -1,0 +1,25 @@
+---
+import Section from './Section.astro'
+---
+
+<Section
+  title='Solar and Powerwall'
+  subtitle='Power Everything'
+  color='#000'
+  subcolor='zinc-800'
+>
+  <div slot='footer'>
+    <div class='pb-20'>
+      <a
+        class='border-[3px] border-zinc-800 bg-zinc-800 text-gray-200 text-sm rounded font-medium px-20 py-[6px] inline-block hover:bg-black hover:text-white hover:border-black transition-colors'
+        href='#'>Learn More</a
+      >
+    </div>
+  </div>
+  <img
+    slot='background'
+    src='/solarpanels.avif'
+    alt='Solarpanels Tesla'
+    class='h-full w-full object-cover object-center'
+  />
+</Section>

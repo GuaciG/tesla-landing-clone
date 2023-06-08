@@ -1,0 +1,40 @@
+---
+import LandingHeader from '../components/LandingHeader.astro'
+import HeroSection from '../components/HeroSection.astro'
+import ModelSSection from '../components/ModelSSection.astro'
+import Model3Section from '../components/Model3Section.astro'
+import ModelXSection from '../components/ModelXSection.astro'
+import ModelYSection from '../components/ModelYSection.astro'
+import Powerwall from '../components/Powerwall.astro'
+import Accessories from '../components/Accessories.astro'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title='Electric Cars | Tesla Clone'>
+  <LandingHeader />
+  <main
+    class='snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth'
+  >
+    <div class='snap-center'>
+      <HeroSection />
+    </div>
+    <div class='snap-center'>
+      <ModelSSection />
+    </div>
+    <div class='snap-center'>
+      <Model3Section />
+    </div>
+    <div class='snap-center'>
+      <ModelXSection />
+    </div>
+    <div class='snap-center'>
+      <ModelYSection />
+    </div>
+    <div class='snap-center'>
+      <Powerwall />
+    </div>
+    <div class='snap-center'>
+      <Accessories />
+    </div>
+  </main>
+</Layout>
