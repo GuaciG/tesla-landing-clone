@@ -3,15 +3,17 @@ import Section from './Section.astro'
 ---
 
 <Section title='Model S' color='black'>
-  <div slot='footer'>
-    <div class='flex flex-col flex-grow justify-end pb-4'>
-      <div class='flex justify-center gap-x-4 mx-auto pb-8'>
+  <div class='w-full' slot='footer'>
+    <div class='flex flex-col flex-grow justify-end w-full pb-4'>
+      <div
+        class='flex max-[600px]:flex-col max-[600px]:gap-5 justify-center w-full gap-x-4 mx-auto pb-8'
+      >
         <a
-          class='border-[3px] border-zinc-800 bg-zinc-800 text-sm rounded font-medium text-gray-200 px-16 py-[6px] inline-block hover:bg-black hover:text-white hover:border-black transition-colors'
+          class='max-[600px]:w-full w-[265px] h-[40px] border-[3px] border-zinc-800 bg-zinc-800 text-sm rounded font-medium text-gray-200 transition-colors inline-flex justify-center items-center hover:bg-black hover:text-white hover:border-black'
           href='#'>Explore Inventory</a
         >
         <a
-          class='border-[3px] border-gray-200 bg-gray-200 text-gray-600 text-sm rounded font-medium px-16 py-[6px] transition-colors hover:bg-black hover:text-white hover:border-black inline-flex justify-center items-center'
+          class='max-[600px]:w-full w-[265px] h-[40px] border-[3px] border-gray-200 bg-gray-200 text-sm rounded font-medium text-gray-600 transition-colors inline-flex justify-center items-center hover:bg-black hover:text-white hover:border-black'
           href='#'>Test Drive</a
         >
       </div>

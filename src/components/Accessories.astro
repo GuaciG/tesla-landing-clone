@@ -3,24 +3,24 @@ import Section from './Section.astro'
 ---
 
 <Section title='Accessories' color='black'>
-  <div slot='footer'>
-    <div class='flex flex-col flex-grow justify-end pb-4'>
-      <div class='flex justify-center gap-x-4 mx-auto pb-8'>
+  <div class='w-full' slot='footer'>
+    <div class='flex flex-col flex-grow justify-end w-full pb-4'>
+      <div class='flex justify-center gap-x-4 w-full mx-auto mb-8'>
         <a
-          class='border-[3px] border-zinc-800 bg-zinc-800 text-sm rounded font-medium text-gray-200 px-20 py-[6px] inline-block hover:bg-black hover:text-white hover:border-black transition-colors'
+          class='max-[600px]:w-full w-[265px] h-[40px] border-[3px] border-zinc-800 bg-zinc-800 text-gray-200 text-sm rounded font-medium inline-flex justify-center items-center hover:bg-black hover:text-white hover:border-black transition-colors'
           href='#'>Shop Now</a
         >
       </div>
       <nav class='flex justify-center w-full'>
         <ul
-          class='flex text-xs [&>li>a]:text-zinc-600 [&>li>a]:font-normal [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2'
+          class='flex max-[600px]:flex-col bg-white text-xs [&>li>a]:text-zinc-600 [&>li>a]:font-normal [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2'
         >
           <li><a href='#'>Tesla © 2023</a></li>
           <li><a href='#'>Privacy & Legal</a></li>
-          <li><a href='#'>Contact</a></li>
+          <li class='max-[600px]:hidden'><a href='#'>Contact</a></li>
           <li><a href='#'>News</a></li>
-          <li><a href='#'>Get Updates</a></li>
-          <li><a href='#'>Locations</a></li>
+          <li class='max-[600px]:hidden'><a href='#'>Get Updates</a></li>
+          <li class='max-[600px]:hidden'><a href='#'>Locations</a></li>
         </ul>
       </nav>
     </div>

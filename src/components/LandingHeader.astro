@@ -11,7 +11,7 @@ import Logo from './Logo.astro'
   </div>
   <nav>
     <ul
-      class='flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-normal [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2'
+      class='max-[1200px]:hidden flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-normal [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2'
     >
       <li><a href='#'>Model S</a></li>
       <li><a href='#'>Model 3</a></li>
@@ -23,7 +23,7 @@ import Logo from './Logo.astro'
   </nav>
   <nav class='flex flex-grow justify-end basis-0'>
     <ul
-      class='flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-normal [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2'
+      class='[&>*:not(:last-child)]:max-[1200px]:hidden [&>*:last-child]:max-[1200px]:bg-black/5 [&>*:last-child]:max-[1200px]:backdrop-blur-sm [&>*:last-child]:max-[1200px]:rounded flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-normal [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2'
     >
       <li><a href='#'>Support</a></li>
       <li><a href='#'>Shop</a></li>
