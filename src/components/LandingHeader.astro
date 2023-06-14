@@ -28,10 +28,56 @@ import Logo from './Logo.astro'
       <li><a href='#'>Support</a></li>
       <li><a href='#'>Shop</a></li>
       <li><a href='#'>Account</a></li>
-      <li><a href='#'>Menu</a></li>
+      <li><a href='#' id='menu-btn'>Menu</a></li>
     </ul>
   </nav>
+  <nav
+    id='side-bar'
+    class='hidden absolute right-0 top-0 h-screen w-80 bg-white text-gray-600 pb-4 z-50 overflow-y-scroll transition-all transform'
+  >
+    <div class='flex justify-end p-5'>
+      <button class='text-lg font-bold text-gray-600' id='close-btn'
+        >&#9587;</button
+      >
+    </div>
 
+    <ul
+      class='[&>li>a]:font-normal text-sm [&>li>a]:inline-block [&>li>a]:ml-10 [&>li>a]:my-1 [&>li>a]:p-2 [&>li>a]:w-9/12 [&>li>a]:transition-colors [&>li>a]:duration-500'
+    >
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Model S</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Model 3</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Model X</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Model Y</a></li>
+      <li>
+        <a class='hover:bg-gray-200 rounded' href='#'>Existing Inventory</a>
+      </li>
+      <li>
+        <a class='hover:bg-gray-200 rounded' href='#'>Used Inventory</a>
+      </li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Trade-in</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Test Drive</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Company Cars</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Powerwall</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Energy</a></li>
+      <li>
+        <a class='hover:bg-gray-200 rounded' href='#'>Commercial Energy</a>
+      </li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Utilities</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Charging</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Careers</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Find Us</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Events</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Support</a></li>
+      <li>
+        <a class='hover:bg-gray-200 rounded' href='#'>Investor Relations</a>
+      </li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>Account</a></li>
+      <li><a class='hover:bg-gray-200 rounded' href='#'>More</a></li>
+      <li>
+        <a class='hover:bg-gray-200 rounded' href='#'>United Kingdom</a>
+      </li>
+    </ul>
+  </nav>
   <div
     id='menu-backdrop'
     class={`
@@ -90,4 +136,20 @@ import Logo from './Logo.astro'
   const sectionsEls = document.querySelectorAll('.landing-section')
 
   sectionsEls.forEach(section => observer.observe(section))
+</script>
+
+<script>
+  const menuBtn = document.querySelector('#menu-btn') as HTMLElement
+  const closeBtn = document.querySelector('#close-btn') as HTMLElement
+  const sideBar = document.querySelector('#side-bar') as HTMLElement
+
+  menuBtn.addEventListener('click', () => {
+    sideBar.style.display = 'block'
+    sideBar.style.transitionDuration = '1000'
+  })
+
+  closeBtn.addEventListener('click', () => {
+    sideBar.style.display = 'none'
+    sideBar.style.transitionDuration = '1000'
+  })
 </script>
